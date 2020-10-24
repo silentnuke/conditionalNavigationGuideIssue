@@ -1,0 +1,25 @@
+<navigation xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/nav_graph"
+    app:startDestination="@id/main_fragment">
+    <fragment
+        android:id="@+id/main_fragment"
+        android:name="com.silentnuke.conditionalnavigationguideissue.MainFragment"
+        android:label="fragment_main"
+        tools:layout="@layout/fragment_main">
+        <action
+            android:id="@+id/navigate_to_profile_fragment"
+            app:destination="@id/profile_fragment" />
+    </fragment>
+    <fragment
+        android:id="@+id/login_fragment"
+        android:name="com.silentnuke.conditionalnavigationguideissue.LoginFragment"
+        android:label="login_fragment"
+        tools:layout="@layout/fragment_login" />
+    <fragment
+        android:id="@+id/profile_fragment"
+        android:name="com.silentnuke.conditionalnavigationguideissue.ProfileFragment"
+        android:label="fragment_profile"
+        tools:layout="@layout/fragment_profile" />
+</navigation>
